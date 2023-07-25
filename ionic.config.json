@@ -1,0 +1,7 @@
+{
+  "name": "pvd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

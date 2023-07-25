@@ -1,0 +1,145 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button slot="start" (click)="backtoMain()">
+      <ion-icon name="arrow-back"> </ion-icon>
+    </ion-button>
+    <ion-title>Graficos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <!-- <ion-title size="large">graficos</ion-title> -->
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
+        <div class="donut-chart-block block">
+          <h2 class="titular">TÓPICOS</h2>
+          <div class="donut-chart">
+            <!-- PORCIONES GRAFICO CIRCULAR
+              ELIMINADO #donut-chart
+              MODIFICADO CSS de .donut-chart -->
+            <div id="porcion1" class="recorte">
+              <div class="quesito ios" data-rel="21"></div>
+            </div>
+            <div id="porcion2" class="recorte">
+              <div class="quesito mac" data-rel="39"></div>
+            </div>
+            <div id="porcion3" class="recorte">
+              <div class="quesito win" data-rel="31"></div>
+            </div>
+            <div id="porcionFin" class="recorte">
+              <div class="quesito linux" data-rel="9"></div>
+            </div>
+            <!-- FIN AÑADIDO GRÄFICO -->
+            <p class="center-date">
+              JULHO<br /><span class="scnd-font-color">2023</span>
+            </p>
+          </div>
+          <ul class="os-percentages horizontal-list">
+            <li>
+              <p class="ios os scnd-font-color">Vazão</p>
+              <p class="os-percentage">15<sup>%</sup></p>
+            </li>
+            <li>
+              <p class="mac os scnd-font-color">fluxo</p>
+              <p class="os-percentage">70<sup>%</sup></p>
+            </li>
+            <li>
+              <p class="linux os scnd-font-color">Metros</p>
+              <p class="os-percentage">6<sup>%</sup></p>
+            </li>
+            <li>
+              <p class="win os scnd-font-color">Gastos</p>
+              <p class="os-percentage">9<sup>%</sup></p>
+            </li>
+          </ul>
+        </div>
+        <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+        <div class="line-chart-block block">
+          <div class="line-chart">
+            <div class="grafico">
+              <ul class="eje-y">
+                <li data-ejeY="30"></li>
+                <li data-ejeY="20"></li>
+                <li data-ejeY="10"></li>
+                <li data-ejeY="0"></li>
+              </ul>
+              <ul class="eje-x">
+                <li>Apr</li>
+                <li>May</li>
+                <li>Jun</li>
+              </ul>
+              <span data-valor="25">
+                <span data-valor="8">
+                  <span data-valor="13">
+                    <span data-valor="5">
+                      <span data-valor="23">
+                        <span data-valor="12">
+                          <span data-valor="15">
+                          </span></span></span></span></span></span
+              ></span>
+            </div>
+          </div>
+          <ul class="time-lenght horizontal-list">
+            <li><a class="time-lenght-btn" href="#14">SEMANA</a></li>
+            <li><a class="time-lenght-btn" href="#15">MÊS</a></li>
+            <li><a class="time-lenght-btn" href="#16">ANO</a></li>
+          </ul>
+          <ul class="month-data clear">
+            <li>
+              <p>MAI<span class="scnd-font-color"> 2023</span></p>
+              <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
+            </li>
+            <li>
+              <p>JUL<span class="scnd-font-color"> 2023</span></p>
+              <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
+            </li>
+            <li>
+              <p>JUL<span class="scnd-font-color"> 2023</span></p>
+              <p><span class="entypo-plus increment"> </span>35<sup>%</sup></p>
+            </li>
+          </ul>
+        </div>
+      </ion-col>
+      <ion-col>
+        <!-- COLUM CHART -->
+        <div class="bar-chart-block block">
+          <h2 class="titular">Cômodos<span></span></h2>
+          <div class="grafico bar-chart">
+            <ul class="eje-y">
+              <li data-ejeY="60"></li>
+              <li data-ejeY="45"></li>
+              <li data-ejeY="30"></li>
+              <li data-ejeY="15"></li>
+              <li data-ejeY="0"></li>
+            </ul>
+            <ul class="eje-x">
+              <li data-ejeX="37"><i>Chuveiro</i></li>
+              <li data-ejeX="56"><i>Torneira</i></li>
+              <li data-ejeX="25"><i>Banheiro</i></li>
+              <li data-ejeX="18"><i>Cozinha</i></li>
+              <li data-ejeX="45"><i>Jardim</i></li>
+              <li data-ejeX="50"><i>Quarto</i></li>
+              <li data-ejeX="33"><i>Suite</i></li>
+            </ul>
+          </div>
+        </div>
+        <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
+        <!-- Grafico coluna teste -->
+        <!-- <div class="chart">
+          <div class="bar" style="height: 100px"></div>
+          <div class="bar" style="height: 80px"></div>
+          <div class="bar" style="height: 120px"></div>
+          <div class="bar" style="height: 60px"></div>
+          <div class="bar" style="height: 90px"></div>
+        </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

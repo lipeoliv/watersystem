@@ -1,0 +1,112 @@
+<ion-header [translucent]="true" class="corfundoHeader">
+  <ion-toolbar class="navCor">
+    <ion-buttons slot="start">
+      <ion-menu-button> </ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button id="butão"><ion-icon name="notifications"></ion-icon></ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button id="butão" [routerLink]="['/perfil']"><ion-icon name="person"></ion-icon></ion-button>
+    </ion-buttons>
+
+    <ion-title>Water System</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container" class="corfundoDiv">
+    <!-- <ion-img src="assets/imgs/ws-logo1.png"></ion-img>
+    <h1>Water System</h1>
+    <h3>Iniciativas conscientes transformam</h3> -->
+  </div>
+
+  <!-- Inicio -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-card color="medium">
+          <ion-card-header >
+            <ion-card-title><ion-icon class="icon-home" name="speedometer"></ion-icon></ion-card-title>
+          </ion-card-header>
+          <ion-card-content >Consumos</ion-card-content>
+        </ion-card>
+   
+      </ion-col>
+      <ion-col>
+        <ion-card color="medium">
+          <ion-card-header>
+            <ion-card-title><ion-icon class="icon-home" name="home"></ion-icon></ion-card-title>
+          </ion-card-header>
+          <ion-card-content>Residências</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="medium">
+          <ion-card-header>
+            <ion-card-title><ion-icon class="icon-home" name="person-circle-outline"></ion-icon></ion-card-title>
+          </ion-card-header>
+          <ion-card-content>Usuários</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="medium">
+          <ion-card-header>
+            <ion-card-title><ion-icon class="icon-home" name="water"></ion-icon></ion-card-title>
+          </ion-card-header>
+          <ion-card-content>Vazamentos</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="medium">
+          <ion-card-header>
+            <ion-card-title><ion-icon class="icon-home" name="stats-chart-outline"></ion-icon></ion-card-title>
+          </ion-card-header>
+          <ion-card-content> Graficos </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="medium">
+          <ion-card-header>
+            <ion-card-title><ion-icon class="icon-home" name="cash-outline"></ion-icon></ion-card-title>
+          </ion-card-header>
+          <ion-card-content> Economize </ion-card-content>
+        </ion-card> 
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+  <!--  -->
+
+  <ion-tabs>
+    <ion-router-outlet></ion-router-outlet>
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="speedometer" [routerLink]="['/consumo']">
+          <ion-icon name="speedometer"></ion-icon>
+          Consumo
+        </ion-tab-button>
+        <ion-tab-button tab="home" [routerLink]="['/residencia']">
+          <ion-icon name="home"></ion-icon>
+          Residência
+        </ion-tab-button>
+        <ion-tab-button tab="add-circle" [routerLink]="['/cadastrar']">
+          <ion-icon name="add-circle"></ion-icon>
+          Cadastrar
+        </ion-tab-button>
+        <ion-tab-button tab="alert" [routerLink]="['/alerta']">
+          <ion-icon name="warning"></ion-icon>
+          Alerta
+        </ion-tab-button>
+        <ion-tab-button tab="water" [routerLink]="['/vazamentos']">
+          <ion-icon name="water"></ion-icon>
+          Vazamentos
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-tabs>
+</ion-content>

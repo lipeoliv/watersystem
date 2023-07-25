@@ -1,0 +1,158 @@
+
+<ion-content class="ion-padding animated fadeIn login auth-page">
+  <div class="auth-content">
+
+
+    
+
+    <!-- Logo -->
+    <div padding-horizontal text-center class="animated fadeInDown">
+      <div class="logo"></div>
+      <h4 no-margin>
+          <ion-img class="img-login center" src="assets/imgs/ws-logo1.png"></ion-img>
+       
+       
+       
+       </h4>
+    </div>
+
+    <!-- Login form -->
+    <div  class="list-form">
+
+
+      <!-- <ion-item no-padding class="animated fadeInUp">
+        <ion-label position="floating">
+          <ion-icon name="mail" item-start></ion-icon>
+          IdUsuário
+        </ion-label>
+        <ion-input color="light" type="text" disabled="True" [(ngModel)]="idusuario"></ion-input>
+      </ion-item>
+      <p ion-text class="text08">
+        <ion-text color="warning">
+          Campo Requerido
+        </ion-text>
+      </p> -->
+
+
+
+      <ion-item no-padding class="animated fadeInUp">
+        <ion-label position="floating">
+          <ion-icon name="lock-closed" item-start></ion-icon>
+          Nome
+        </ion-label>
+        <ion-input placeholder="Nome Completo!" color="white" type="text" [(ngModel)]="nome"></ion-input>
+      </ion-item>
+      <p ion-text color="warning" class="text08">
+        <ion-text color="warning">
+          Campo Requerido
+        </ion-text>
+        </p>
+
+
+        <!-- <ion-item no-padding class="animated fadeInUp">
+          <ion-label position="floating">
+            <ion-icon name="mail" item-start></ion-icon>
+            Idade
+          </ion-label>
+          <ion-input color="white"  type="number" [(ngModel)]="idade"></ion-input>
+        </ion-item>
+        <p ion-text class="text08">
+          <ion-text color="warning">
+            Campo Requerido
+          </ion-text>
+        </p> -->
+
+
+        <!-- <ion-item no-padding class="animated fadeInUp">
+          <ion-label position="floating">
+            <ion-icon name="mail" item-start></ion-icon>
+            Categoria
+          </ion-label>
+          <ion-input color="white"  type="number" [(ngModel)]="categoria"></ion-input>
+        </ion-item>
+        <p ion-text class="text08">
+          <ion-text color="warning">
+            Campo Requerido
+          </ion-text>
+        </p> -->
+
+
+        <ion-item no-padding class="animated fadeInUp">
+          <ion-label position="floating">
+            <ion-icon name="mail" item-start></ion-icon>
+            CPF
+          </ion-label>
+          <ion-input placeholder="Apenas Número!" color="white"  type="number" [(ngModel)]="cpf"></ion-input>
+        </ion-item>
+        <p ion-text class="text08">
+          <ion-text color="warning">
+            Campo Requerido
+          </ion-text>
+        </p>
+
+        <ion-item no-padding class="animated fadeInUp">
+          <ion-label position="floating">
+            <ion-icon name="mail" item-start></ion-icon>
+            Email
+          </ion-label>
+          <ion-input  placeholder="nome@email.com" color="white" type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <p ion-text class="text08">
+          <ion-text color="warning">
+            Campo Requerido
+          </ion-text>
+        </p>
+
+        <ion-item no-padding class="animated fadeInUp">
+          <ion-label position="floating">
+            <ion-icon name="lock-closed" item-start></ion-icon>
+            Senha
+          </ion-label>
+          <ion-input color="white"  type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <p>
+          <ion-text color="warning">
+            Campo Requerido
+          </ion-text>
+        </p>
+
+        <!-- <ion-item no-padding class="animated fadeInUp">
+          <ion-label position="floating">
+            <ion-icon name="mail" item-start></ion-icon>
+            Nivel
+          </ion-label>
+          <ion-input color="white"  type="text" [(ngModel)]="nivel"></ion-input>
+        </ion-item>
+        <p ion-text class="text08">
+          <ion-text color="warning">
+            Campo Requerido
+          </ion-text>
+        </p> -->
+  
+  
+  
+  
+  
+  
+
+
+      </div>
+
+    
+    <br><br>
+
+
+    <div>
+      <ion-button icon-left size="medium" expand="full" shape="round" color="dark" (click)="salvar()" tappable>
+        <ion-icon name="log-in"></ion-icon>
+        Cadastrar
+      </ion-button>
+    </div>
+
+
+
+   
+    <!-- Other links -->
+  
+  </div>
+</ion-content>

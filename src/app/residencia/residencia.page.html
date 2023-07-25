@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click) = "backtoMain()">
+      <ion-button><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Adicionar Residencia</ion-title>
+  </ion-toolbar>
+</ion-header>  
+
+<ion-content id="container">
+
+  <ion-item>
+    <ion-label>Id.Residencia</ion-label>
+    <ion-input placeholder="---" disabled="True" [(ngModel)]="id"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Complemento:</ion-label>
+    <ion-input placeholder="Complemento"  [(ngModel)]="complemento"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cidade:</ion-label>
+    <ion-input placeholder="Cidade" type="text" [(ngModel)]="cidade"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Estado:</ion-label>
+    <ion-input placeholder="Estado" type="text" [(ngModel)]="estado"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bairro:</ion-label>
+    <ion-input placeholder="Bairro" type="text" [(ngModel)]="bairro"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Endereço:</ion-label>
+    <ion-input placeholder="endereço" type="text" [(ngModel)]="endereco"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Id. Usuario:</ion-label>
+    <ion-input placeholder="ID" type="number" (change)="carregarUsuario()" [(ngModel)]="fk_idusuario"></ion-input>
+    <div class="botao">
+      <ion-button size="small" shape="round" (click)="openModal()">
+        <ion-icon name="create-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+  <ion-item>
+    <ion-label>Proprietário:</ion-label>
+    <ion-input placeholder="Proprietário" type="text" [(ngModel)]="proprietario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <div class="botao">
+      <ion-button size="large" shape="round" (click)="salvar()">Adicionar</ion-button>
+    </div>
+  </ion-item>
+</ion-content>

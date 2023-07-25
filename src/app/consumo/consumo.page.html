@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Consumo</ion-title>
+    <ion-buttons slot="start" (click) = "backtoMain()">
+      <ion-button><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-list>
+    <!-- <ion-item>
+    <ion-label position="stacked">Servidor:</ion-label>
+    <ion-input type="text" [(ngModel)]="server"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Porta:</ion-label>
+      <ion-input type="text" [(ngModel)]="port"></ion-input>
+      </ion-item> -->
+
+     
+
+        <ion-item>
+          <ion-label position="stacked">Vazão:<br>(L/min)</ion-label>
+          <ion-input type="text" [(ngModel)]="vazao"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Fluxo Acumulado:<br>(L/s)</ion-label>
+            <ion-input type="text" [(ngModel)]="fluxo"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Metros cúbicos: <br>(m³/s)</ion-label>
+              <ion-input type="text" [(ngModel)]="metros"></ion-input>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label position="stacked">Gasto:<br>R$:</ion-label>
+                <ion-input type="text" [(ngModel)]="gasto"></ion-input>
+                </ion-item>
+          
+                <ion-item class="buton">
+                  <ion-button size="large" shape="round" (click)="pegarDadosSensores()">Pegar Dados</ion-button>
+                    </ion-item>
+
+            
+
+
+
+    </ion-list>
+    </div>
+</ion-content>
